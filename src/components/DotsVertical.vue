@@ -1,0 +1,36 @@
+<template>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+  >
+    <path
+      d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm0-7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm0 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+      :stroke="color"
+      :stroke-width="strokeWidth"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>
+<script>
+  export default {
+    name: 'DotsVertical',
+    props: {
+      size: {
+        type: [String, Number],
+        default: 24
+      },
+      color: {
+        type: String,
+        default: 'currentColor'
+      },
+      strokeWidth: {
+        type: [String, Number],
+        default: 2
+      }
+    }
+  }
+</script>

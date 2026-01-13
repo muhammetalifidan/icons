@@ -1,58 +1,52 @@
 {
-    "name": "@untitledui/icons",
-    "version": "0.0.19",
-    "description": "Official React library for Untitled UI Icons",
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "sideEffects": false,
-    "scripts": {
-        "optimize:svg": "svgo -f icons/ -r",
-        "build": "npm run build:icons && npm run build:tsc",
-        "build:tsc": "tsup --minify",
-        "build:icons": "svgr -- icons",
-        "release": "standard-version --release-as patch && git push --follow-tags && npm publish"
-    },
-    "files": [
-        "README.md",
-        "LICENSE",
-        "dist"
-    ],
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.mjs",
-            "require": "./dist/index.js"
-        },
-        "./*": {
-            "types": "./dist/*.d.ts",
-            "import": "./dist/*.mjs",
-            "require": "./dist/*.js"
-        }
-    },
-    "keywords": [
-        "untitledui",
-        "icons",
-        "svg",
-        "react"
-    ],
-    "author": "Dilshod Turobov",
-    "license": "MIT",
-    "publishConfig": {
-        "access": "public"
-    },
-    "devDependencies": {
-        "@svgr/babel-plugin-remove-jsx-attribute": "^6.5.0",
-        "@svgr/cli": "^6.5.1",
-        "@types/node": "^24.0.15",
-        "@types/react": "^18.3.3",
-        "prettier": "^2.8.4",
-        "react": "^18.3.1",
-        "standard-version": "^9.5.0",
-        "tsup": "^8.2.4",
-        "typescript": "^5.5.4"
-    },
-    "peerDependencies": {
-        "react": ">= 16"
+  "name": "@untitledui/vue",
+  "version": "0.0.1",
+  "description": "Unofficial Vue 3 port of Untitled UI Icons",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./src/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build:icons": "node scripts/build-icons.mjs",
+    "build": "npm run build:icons && vite build",
+    "format": "prettier --write ."
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
+  },
+  "keywords": [
+    "untitledui",
+    "icons",
+    "svg",
+    "vue",
+    "vue-3",
+    "vite"
+  ],
+  "author": "Dilshod Turobov",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "camelcase": "^6.3.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.3",
+    "prettier": "^3.7.4",
+    "svgo": "^3.0.2",
+    "vite": "^7.3.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.26"
+  }
 }

@@ -1,0 +1,36 @@
+<template>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+  >
+    <path
+      d="m16.5 4 5 5m0-5-5 5M16 21v-1.2c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311C13.72 15 12.88 15 11.2 15H6.8c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C2 17.28 2 18.12 2 19.8V21M12.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+      :stroke="color"
+      :stroke-width="strokeWidth"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>
+<script>
+  export default {
+    name: 'UserX02',
+    props: {
+      size: {
+        type: [String, Number],
+        default: 24
+      },
+      color: {
+        type: String,
+        default: 'currentColor'
+      },
+      strokeWidth: {
+        type: [String, Number],
+        default: 2
+      }
+    }
+  }
+</script>

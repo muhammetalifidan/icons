@@ -1,4 +1,8 @@
 {
-    "printWidth": 120,
-    "tabWidth": 4
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "vueIndentScriptAndStyle": true,
+  "printWidth": 100,
+  "tabWidth": 2
 }

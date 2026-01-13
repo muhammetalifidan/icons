@@ -1,0 +1,36 @@
+<template>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+  >
+    <path
+      d="M9.5 7h5m-5 4h5m-5 4h5m3.5 6V6.2c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C16.48 3 15.92 3 14.8 3H9.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C6 4.52 6 5.08 6 6.2V21m14 0H4"
+      :stroke="color"
+      :stroke-width="strokeWidth"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>
+<script>
+  export default {
+    name: 'Building04',
+    props: {
+      size: {
+        type: [String, Number],
+        default: 24
+      },
+      color: {
+        type: String,
+        default: 'currentColor'
+      },
+      strokeWidth: {
+        type: [String, Number],
+        default: 2
+      }
+    }
+  }
+</script>

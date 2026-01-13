@@ -1,0 +1,36 @@
+<template>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+  >
+    <path
+      d="M2 12h10M9 4v16M3 9l3 3-3 3m9-9L9 9 6 6m0 12 3-3 1.5 1.5m9.5-1.965V4a2 2 0 1 0-4 0v10.535a4 4 0 1 0 4 0Z"
+      :stroke="color"
+      :stroke-width="strokeWidth"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>
+<script>
+  export default {
+    name: 'ThermometerCold',
+    props: {
+      size: {
+        type: [String, Number],
+        default: 24
+      },
+      color: {
+        type: String,
+        default: 'currentColor'
+      },
+      strokeWidth: {
+        type: [String, Number],
+        default: 2
+      }
+    }
+  }
+</script>

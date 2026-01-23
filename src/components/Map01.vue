@@ -1,36 +1,22 @@
 <template>
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    :width="size"
-    :height="size"
-  >
-    <path
-      d="m9 18-7 4V6l7-4m0 16 7 4m-7-4V2m7 20 6-4V2l-6 4m0 16V6m0 0L9 2"
-      :stroke="color"
-      :stroke-width="strokeWidth"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size"><path d="m9 18-7 4V6l7-4m0 16 7 4m-7-4V2m7 20 6-4V2l-6 4m0 16V6m0 0L9 2" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </template>
 <script>
-  export default {
-    name: 'Map01',
-    props: {
-      size: {
-        type: [String, Number],
-        default: 24
-      },
-      color: {
-        type: String,
-        default: 'currentColor'
-      },
-      strokeWidth: {
-        type: [String, Number],
-        default: 2
-      }
+export default {
+  name: 'Map01',
+  props: {
+    size: {
+      type: [String, Number],
+      default: 24
+    },
+    color: {
+      type: String,
+      default: 'currentColor'
+    },
+    strokeWidth: {
+      type: [String, Number],
+      default: 2
     }
   }
+}
 </script>

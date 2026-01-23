@@ -1,36 +1,22 @@
 <template>
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    :width="size"
-    :height="size"
-  >
-    <path
-      d="m12 8 4 4m0 0-4 4m4-4H3m.338-5A9.996 9.996 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.996 9.996 0 0 1-8.662-5"
-      :stroke="color"
-      :stroke-width="strokeWidth"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size"><path d="m12 8 4 4m0 0-4 4m4-4H3m.338-5A9.996 9.996 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.996 9.996 0 0 1-8.662-5" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </template>
 <script>
-  export default {
-    name: 'LogIn04',
-    props: {
-      size: {
-        type: [String, Number],
-        default: 24
-      },
-      color: {
-        type: String,
-        default: 'currentColor'
-      },
-      strokeWidth: {
-        type: [String, Number],
-        default: 2
-      }
+export default {
+  name: 'LogIn04',
+  props: {
+    size: {
+      type: [String, Number],
+      default: 24
+    },
+    color: {
+      type: String,
+      default: 'currentColor'
+    },
+    strokeWidth: {
+      type: [String, Number],
+      default: 2
     }
   }
+}
 </script>

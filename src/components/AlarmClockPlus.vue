@@ -1,36 +1,22 @@
 <template>
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    :width="size"
-    :height="size"
-  >
-    <path
-      d="M5 3 2 6m20 0-3-3M6 19l-2 2m14-2 2 2m-8-5v-6m-3 3h6m-3 8a8 8 0 1 0 0-16.001A8 8 0 0 0 12 21Z"
-      :stroke="color"
-      :stroke-width="strokeWidth"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size"><path d="M5 3 2 6m20 0-3-3M6 19l-2 2m14-2 2 2m-8-5v-6m-3 3h6m-3 8a8 8 0 1 0 0-16.001A8 8 0 0 0 12 21Z" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </template>
 <script>
-  export default {
-    name: 'AlarmClockPlus',
-    props: {
-      size: {
-        type: [String, Number],
-        default: 24
-      },
-      color: {
-        type: String,
-        default: 'currentColor'
-      },
-      strokeWidth: {
-        type: [String, Number],
-        default: 2
-      }
+export default {
+  name: 'AlarmClockPlus',
+  props: {
+    size: {
+      type: [String, Number],
+      default: 24
+    },
+    color: {
+      type: String,
+      default: 'currentColor'
+    },
+    strokeWidth: {
+      type: [String, Number],
+      default: 2
     }
   }
+}
 </script>

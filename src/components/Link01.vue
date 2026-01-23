@@ -1,36 +1,22 @@
 <template>
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    :width="size"
-    :height="size"
-  >
-    <path
-      d="m12.708 18.364-1.415 1.414a5 5 0 1 1-7.07-7.07l1.413-1.415m12.728 1.414 1.415-1.414a5 5 0 0 0-7.071-7.071l-1.415 1.414M8.5 15.5l7-7"
-      :stroke="color"
-      :stroke-width="strokeWidth"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size"><path d="m12.708 18.364-1.415 1.414a5 5 0 1 1-7.07-7.07l1.413-1.415m12.728 1.414 1.415-1.414a5 5 0 0 0-7.071-7.071l-1.415 1.414M8.5 15.5l7-7" :stroke="color" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </template>
 <script>
-  export default {
-    name: 'Link01',
-    props: {
-      size: {
-        type: [String, Number],
-        default: 24
-      },
-      color: {
-        type: String,
-        default: 'currentColor'
-      },
-      strokeWidth: {
-        type: [String, Number],
-        default: 2
-      }
+export default {
+  name: 'Link01',
+  props: {
+    size: {
+      type: [String, Number],
+      default: 24
+    },
+    color: {
+      type: String,
+      default: 'currentColor'
+    },
+    strokeWidth: {
+      type: [String, Number],
+      default: 2
     }
   }
+}
 </script>

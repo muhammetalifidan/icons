@@ -1,4 +1,4 @@
-# Untitled UI Icons - Vue 3
+# Untitled UI Icons - Vue 3 (Community Port)
 
 Unofficial Vue 3 port of the [Untitled UI Icons](https://www.untitledui.com/icons) library.
 This package is automatically generated from the official SVG sources using a custom build script.
@@ -6,9 +6,9 @@ This package is automatically generated from the official SVG sources using a cu
 ## Installation
 
 ```bash
-npm install @untitledui/vue
+npm install @muhammetalifidan/untitledui-vue
 # or
-pnpm add @untitledui/vue
+pnpm add @muhammetalifidan/untitledui-vue
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ You can import icons directly as Vue components.
 
 ```vue
 <script setup>
-  import { Home01, AlertCircle, ShoppingCart01 } from '@untitledui/vue'
+  import { Home01, AlertCircle, ShoppingCart01 } from '@muhammetalifidan/untitledui-vue'
 </script>
 
 <template>

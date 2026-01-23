@@ -1,5 +1,5 @@
 {
-  "name": "@untitledui/vue",
+  "name": "@muhammetalifidan/untitledui-vue",
   "version": "0.0.1",
   "description": "Unofficial Vue 3 port of Untitled UI Icons",
   "main": "./dist/index.umd.js",
@@ -24,15 +24,25 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammetalifidan/untitledui-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhammetalifidan/untitledui-vue/issues"
+  },
+  "homepage": "https://github.com/muhammetalifidan/untitledui-vue#readme",
   "keywords": [
     "untitledui",
     "icons",
     "svg",
     "vue",
     "vue-3",
-    "vite"
+    "vite",
+    "component",
+    "icon-pack"
   ],
-  "author": "Dilshod Turobov",
+  "author": "Muhammet Ali Fidan",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -47,6 +57,6 @@
     "vite": "^7.3.1"
   },
   "peerDependencies": {
-    "vue": "^3.5.26"
+    "vue": "^3.2.0"
   }
 }
